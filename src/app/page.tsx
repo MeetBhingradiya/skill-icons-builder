@@ -162,13 +162,13 @@ export default function IconBuilder() {
               <label htmlFor="icons-per-line">
                 Icons per line: {iconsPerLine}
               </label>
-              <Slider
+              <input
                 id="icons-per-line"
                 min={1}
                 max={50}
                 step={1}
                 value={[iconsPerLine]}
-                onValueChange={([value]) => setIconsPerLine(value)}
+                onChange={([value]) => setIconsPerLine(value)}
                 className="w-[113px] max-w-xs"
               />
             </div>
